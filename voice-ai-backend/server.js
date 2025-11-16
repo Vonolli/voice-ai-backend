@@ -56,7 +56,7 @@ Be conversational, helpful, and occasionally suggest relevant Thalcor areas base
 
     const mp3Response = await openai.audio.speech.create({
   model: 'tts-1-hd',  // HD quality!
-  voice: 'fable',
+  voice: 'echo',
   input: responseText,
 });
 
