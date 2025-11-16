@@ -30,7 +30,7 @@ app.post('/api/chat', async (req, res) => {
 
     const mp3Response = await openai.audio.speech.create({
   model: 'tts-1',
-  voice: 'onyx',  // Changed to onyx for masculine Australian-ish voice
+  voice: 'fable',  // Changed for masculine British voice
   input: responseText,
 });
 
