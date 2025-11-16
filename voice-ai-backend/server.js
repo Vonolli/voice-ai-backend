@@ -29,10 +29,10 @@ app.post('/api/chat', async (req, res) => {
     const responseText = chatResponse.choices[0].message.content;
 
     const mp3Response = await openai.audio.speech.create({
-      model: 'tts-1',
-      voice: 'nova',
-      input: responseText,
-    });
+  model: 'tts-1',
+  voice: 'echo',  // Changed to echo for masculine Australian-ish voice
+  input: responseText,
+});
 
     const buffer = Buffer.from(await mp3Response.arrayBuffer());
 
