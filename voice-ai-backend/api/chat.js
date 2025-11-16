@@ -1,3 +1,5 @@
-export default function handler(req, res) {
+const OpenAI = require('openai');
+
+module.exports = async function handler(req, res) {
   res.status(200).json({ message: 'Hello from API!' });
 }
