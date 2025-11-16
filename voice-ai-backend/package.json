@@ -1,0 +1,11 @@
+{
+  "name": "voice-ai-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "openai": "^4.20.0"
+  }
+}
