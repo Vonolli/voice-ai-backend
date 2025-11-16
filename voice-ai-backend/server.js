@@ -48,8 +48,8 @@ We seek talented creatives, outliers, and partners who believe in our vision.`
     const responseText = chatResponse.choices[0].message.content;
 
     const mp3Response = await openai.audio.speech.create({
-  model: 'tts-1',
-  voice: 'fable',  // Changed for masculine British voice
+  model: 'tts-1-hd',  // HD quality!
+  voice: 'onyx',
   input: responseText,
 });
 
