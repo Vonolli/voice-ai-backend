@@ -49,7 +49,7 @@ We seek talented creatives, outliers, and partners who believe in our vision.`
 
     const mp3Response = await openai.audio.speech.create({
   model: 'tts-1-hd',  // HD quality!
-  voice: 'onyx',
+  voice: 'fable',
   input: responseText,
 });
 
